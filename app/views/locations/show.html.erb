@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @location.name %></h1>
+
+<% @location.books.each do |book| %>
+    <h3><%= link_to book.name, book%></h3>
+
+<% end %>
+<%= link_to 'Edit', edit_author_path(@location), class:'btn' %>
+<%= link_to 'Back', authors_path, class:'btn' %>
+

@@ -1,0 +1,42 @@
+<h1>Search Fond</h1>
+<div class='row'></div>
+    <div>
+      <h3>Books (<%= @books.length %>)</h3>
+
+
+
+      <% @books.each do |book| %>
+
+          <dd><%= link_to book.name, book %></dd>
+
+      <% end %>
+
+    </div>
+    <div>
+      <h3>Authors  (<%= @authors.length %>)</h3>
+
+      <% @authors.each do |author| %>
+          <dd><%= link_to author.name, author %></dd>
+
+      <% end %>
+    </div>
+
+    <div>
+      <h3>Publishers  (<%= @publishers.length %>)</h3>
+
+      <% @publishers.each do |publisher| %>
+          <dd><%= link_to publisher.name, publisher %></dd>
+
+      <% end %>
+    </div>
+
+    <div>
+      <h3>Libraries  (<%= @locations.length %>)</h3>
+
+      <% @locations.each do |location| %>
+
+          <dd><%= link_to location.name, location %></dd>
+
+      <% end %>
+    </div>
+</div>

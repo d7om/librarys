@@ -1,0 +1,22 @@
+<h1>Authors</h1>
+<div class='row'>
+  <dl class='dl-horizontal'>
+    <dt><%= link_to 'New Author', new_author_path, class:'btn' %></dt>
+  </dl>
+
+  <% @authors.each do |author| %>
+
+    <dl class="dl-horizontal">
+
+      <dt>Author name</dt>
+      <dd><%= link_to author.name, author %></dd>
+
+      <dt>No Books</dt>
+      <dd><%= author.books.length %></dd>
+
+    </dl>
+  <% end %>
+
+
+</div>
+

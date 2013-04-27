@@ -1,0 +1,44 @@
+<!--<p id="notice"><%= notice %></p>-->
+<h1><%= @book.name %></h1>
+<div class='row'>
+
+      <table class="table table-striped">
+        <tr>
+          <th>Author</th>
+          <td><%= @book.author.name %></td>
+        </tr>
+        <tr>
+          <th>Publisher</th>
+          <td><%= @book.publisher.name %></td>
+        </tr>
+        <tr>
+          <th>Category</th>
+          <td><%= @book.category%></td>
+        </tr>
+        <tr>
+          <th>Language</th>
+          <td><%= @book.language %></td>
+        </tr>
+        <tr>
+          <th>Version</th>
+          <td><%= @book.version %></td>
+        </tr>
+        <tr>
+          <th>Pages</th>
+          <td><%= @book.pages %></td>
+        </tr>
+        <tr>
+          <th>Library</th>
+          <td><%= @book.location.name %></td>
+        </tr>
+        <tr>
+          <th>Rack</th>
+          <td><%= @book.location.rack %></td>
+        </tr>
+      </table>
+
+
+
+<%= link_to 'Edit', edit_book_path(@book), class:'btn'  %>
+<%= link_to 'Back', books_path, class:'btn' %>
+</div>

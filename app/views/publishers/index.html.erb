@@ -1,0 +1,18 @@
+<h1>Publishers</h1>
+
+<div class="row">
+  <dl class="dl-horizontal">
+    <dt><%= link_to 'New Publisher', new_publisher_path, class:'btn' %></dt>
+  </dl>
+  <% @publishers.each do |publisher| %>
+      <dl class="dl-horizontal">
+        <dt>Publisher name</dt>
+        <dd><%= link_to publisher.name, publisher %></dd>
+
+
+      </dl>
+  <% end %>
+
+</div>
+
+

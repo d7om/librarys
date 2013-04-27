@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  language: MyString
+  isbn: MyString
+  version: MyString
+  copies: MyString
+
+two:
+  language: MyString
+  isbn: MyString
+  version: MyString
+  copies: MyString
