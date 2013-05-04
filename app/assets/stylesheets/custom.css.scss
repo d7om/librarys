@@ -60,6 +60,7 @@ h2 {
   text-align: center;
   font-weight: normal;
   color: $grayLight;
+  top: 50px;
 }
 
 p {
@@ -84,10 +85,18 @@ p {
    text-decoration: none;
   }
  }
-
-form-search {
-  box-decoration-break: center;
+#header {
+  background: #000000;
+  border-bottom: double 3px #aba;
+  border-left: solid 1px #9a9;
+  border-right: solid 1px #565;
+  border-top: solid 1px #9a9;
+  font: italic normal 230% 'Times New Roman', Times, serif;
+  letter-spacing: 0.2em;
+  margin: 0;
+  padding: 15px 10px 15px 60px;
 }
+
 
 
 
@@ -139,7 +148,7 @@ aside {
       padding-top: 0;
     }
     span {
-      display: block;
+      displaymainContent: block;
       margin-bottom: 3px;
       line-height: 1;
     }
@@ -230,6 +239,9 @@ aside {
   }
 }
 
+#mainContent {
+  margin-top: 100px;
+}
 /* books */
 //body {
 //  direction: rtl;

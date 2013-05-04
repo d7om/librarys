@@ -7,14 +7,14 @@ class Book < ActiveRecord::Base
                   :location_id,   :location_attributes,       :author_id,
                   :publisher_id,  :author_attributes,         :publisher_attributes
 
-  accepts_nested_attributes_for :author
-  accepts_nested_attributes_for :location
-  accepts_nested_attributes_for :publisher
+  accepts_nested_attributes_for :location, reject_if: proc { |attributes| attributes['name'].blank? }
+  accepts_nested_attributes_for :author, reject_if: proc { |attributes| attributes['name'].blank? }
+  accepts_nested_attributes_for :publisher, reject_if: proc { |attributes| attributes['name'].blank? }
 
 
 
   validates :name,      presence:true
-  #validates :author,    presence:true #, :associated => true
-  #validates :publisher, presence:true
-  #validates :location,  presence:true
+  validates :author,    presence:true
+  validates :publisher, presence:true
+  validates :location,  presence:true
 end
